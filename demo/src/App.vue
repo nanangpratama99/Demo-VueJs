@@ -48,6 +48,13 @@
             <button class="btn-hapus">Hapus</button>
           <button class="btn-edit">Edit</button>
           </tr>
+          <tr>
+            <td>3</td>
+            <td>{{ mhs[3]["nama"] }}</td>
+            <td>{{ mhs[3]["jurusan"] }}</td>
+            <button class="btn-hapus">Hapus</button>
+          <button class="btn-edit">Edit</button>
+          </tr>
         </tbody>
       </table>
       </div>
@@ -81,6 +88,10 @@ export default {
           },
           {
             nama: "Ardi",
+            jurusan: "Teknik Informatika"
+          },
+          {
+            nama: "Aswin",
             jurusan: "Teknik Informatika"
           }
         ]
@@ -125,9 +136,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
   box-sizing: border-box;
+  /* height: 100%; */
+  /* width: 100%; */
 }
+
 .btn {
   background-color: rgb(49, 195, 146);
   border-radius: 5px;
